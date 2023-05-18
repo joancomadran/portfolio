@@ -23,6 +23,10 @@ app.get("/aboutme", function(req, res){
     res.render("aboutme");
 })
 
+app.get("/projects", function(req, res) {
+    res.render("projects");
+})
+
 app.listen(3000, function(){
     console.log("Server running on port 3000");
 })
