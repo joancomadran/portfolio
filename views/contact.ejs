@@ -1,0 +1,17 @@
+<%- include ('./partials/header.ejs') %>
+
+<div id="blob"></div>
+<div id="blur"></div>
+<div id="contactme">
+    <h1 id="contactmeh1" data-value="CONTACT ME"> CONTACT ME</h1>
+    <form action="/enviar.php" method="post">
+        <input id="contactform" type="email" id="email" name="email" placeholder="johnappleseed@gmail.com" required><br><br>
+        
+        <textarea id="contactText" name="mensaje" rows="7" required placeholder="Write your message here"></textarea><br><br>
+        
+        <input type="submit" value="Enviar">
+      </form>
+</div>
+</div>
+</div>
+<%- include ('./partials/footer.ejs') %>

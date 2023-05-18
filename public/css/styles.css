@@ -1,0 +1,384 @@
+:root {
+    --c1: #211F24;
+    --c2: #AC80FD;
+    --c3: #71B4B8;
+    --c4: #C8B49A;
+    --text: #fff;
+  }
+  
+  * {
+    cursor: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  body {
+    background-color:#211F24 !important;
+    height: 100vh;
+    margin: 0rem;
+    overflow: hidden;
+  }
+/*MENU INSTA-GITHUB*/
+
+  #menu-icons {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text);
+    z-index: 100;
+    transition: .3s ease
+  }
+
+  #menu-icons a:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    color: var(--c3);
+  }
+
+  @media (max-width: 768px) {
+    #menu-icons {
+      display: none;
+    }
+  }
+  
+/**** HERO SECTION ****/
+
+.description {
+  font-size: 1.7vw;
+}
+
+.dev {
+  color: var(--c3);
+}
+
+.eng {
+  color: var(--c1);
+}
+  .side {
+    display: grid;
+    height: 100vh;
+    overflow: hidden;
+    place-items: center;
+    width: 100%;
+  }
+  
+  .side .title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5vw;
+    margin: 0px 10vw;
+    width: 80vw;
+  }
+  
+  .side .fancy {
+    font-family: "Lobster", cursive;
+    font-size: 1.3em;
+    line-height: 0.8em;
+  }
+  
+  #left-side {
+    background-color: var(--c1);
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+  }
+  
+  #left-side .title {  
+    color: var(--text);  
+  }
+  
+  #left-side .fancy {
+    color: var(--c2);
+  }
+
+  .projectsButton-left {
+    background-color: transparent;
+    font-size: 2rem;
+    border: 1px solid var(--c4);
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--c4);
+  }
+
+  .projectsButton-right {
+    background-color: transparent;
+    font-size: 2rem;
+    border: 1px solid var(--text);
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--text);
+  }
+
+  
+  #right-side {
+    background-color: var(--c2);
+  }
+  
+  #right-side .title {
+    color: var(--dark);
+  }
+  
+  #right-side .fancy {
+    color: var(--text);
+  }
+
+  /*HEADER*/
+
+  .header {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+  }
+
+.nav-item a {
+  font-size: x-large;
+  font-weight: bold;
+  color: var(--text);
+  transition: .3s ease;
+  }
+
+  .nav-item a:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    color: var(--c4);
+  }
+
+  .cv a{
+    color: var(--text) !important;
+  }
+
+  .cv a:hover {
+    color: var(--c4) !important;
+  }
+
+
+  /*CURSOR*/
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: var(--text);
+    opacity: .4;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+    z-index: 100;
+}
+.hover {
+    background-color: white;
+    opacity: 0.5;
+  }
+
+
+/**** WORK EXPERIENCE ****/
+
+.magic-gradient {
+  font-size: xx-large;
+  
+  /* Create the gradient. */
+  background-image: linear-gradient(-180deg, var(--c2), var(--c3));
+  
+  background-size: 60%;
+  background-repeat: repeat;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#work span {
+  background-image: linear-gradient(180deg, var(--c4), var(--c3));
+  
+  background-size: 100%;
+  background-repeat: repeat;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#work p {
+  text-align: justify;
+  color: var(--c3);
+}
+
+#work {
+  padding-top: 60px !important;
+}
+
+
+h3 {
+  color: var(--text) !important;
+}
+
+h6 {
+  color: var(--c4) !important;
+}
+
+#languageList{
+  color: var(--c3);
+}
+
+#driverList{
+  color: var(--c3);
+}
+
+.caption {
+  color: var(--text);
+}
+
+.icons{
+  transition: .3s ease;
+}
+
+.icons:hover{
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+}
+
+/*FOOTER*/
+
+#footer {
+  z-index: 100;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#footer .copyright {
+  color: var(--text) !important;
+}
+
+#footer svg {
+  color: var(--text) !important;
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  
+  50% {
+    scale: 1 1.5;
+  }
+  
+  to {
+    rotate: 360deg;
+  }
+}
+
+#blob {
+  background-color: white;
+  height: 30vmax;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, var(--c3), var(--c2));
+  animation: rotate 20s infinite;
+  opacity: 0.8;
+}
+
+#blur {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backdrop-filter: blur(12vmax);
+  margin: 0;
+}
+
+#aboutme {
+  position: relative;
+  z-index: 4;
+}
+
+ /*CONTACT ME*/
+
+#contactme {
+  position: relative;
+  color: var(--text) !important;
+  text-align: center;
+  top: 30%;
+  z-index: 3;
+}
+
+#contactform {
+  margin-top: 20px;
+  padding: 10px;
+  width: 50%;
+  height: 3rem;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid var(--c4);
+  color: var(--c4);
+}
+
+#contactform::placeholder {
+  color: var(--c4);
+  opacity: 30%;
+}
+
+#contactform:focus {
+  outline: 1px solid var(--c3);
+  border: none;
+}
+
+#contactText {
+  padding: 10px;
+  width: 50%;
+  background-color: transparent;
+  border-radius: 10px;
+  border-color: var(--c4);
+  color: var(--c4);
+}
+
+#contactText::placeholder {
+  color: var(--c4);
+  opacity: 30%;
+}
+
+#contactText:focus{
+  outline: 1px solid var(--c3);
+  border: none;
+}
+
+#contactmeh1 {
+  color: var(--c4);
+  font-weight: bold;
+
+}
+
+input[type="submit"] {
+  background-color: transparent;
+  border-radius: 10px;
+  color: var(--c4);
+  border: 1px solid var(--c4);
+  width: 10%;
+  height: 3rem;
+  transition: .3s ease;
+}
+
+input[type="submit"]:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  background-color: transparent;
+  border-radius: 10px;
+  color: var(--c3);
+  border: 1px solid var(--c3);
+  width: 10%;
+  height: 3rem;
+}
